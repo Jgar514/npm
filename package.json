@@ -1,0 +1,28 @@
+{
+  "name": "webslinger",
+  "version": "1.0.0",
+  "description": "CLI tool to create a website environment, add tailwindcss, push to github, deploy to netlify",
+  "main": "index.js",
+  "bin": {
+    "webslinger": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jgar514/npm.git"
+  },
+  "keywords": [
+    "Jgar514"
+  ],
+  "author": "Josh Garvey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jgar514/npm/issues"
+  },
+  "homepage": "https://github.com/Jgar514/npm#readme",
+  "dependencies": {
+    "commander": "^8.3.0" 
+  }
+}
