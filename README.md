@@ -1,5 +1,14 @@
 # Webslinger CLI Tool
 
+
+## Installation Steps:
+
+- **Demonstration:** (Show command line)
+"Let's get started! First, install webslinger globally using npm:
+
+```
+npm install -g webslinger
+```
 ## Overview
 
 The webslinger CLI tool automates the setup of a full-stack website environment, integrates Tailwind CSS for styling, pushes the project to GitHub, and deploys it to Netlify—all in one streamlined process. It's designed to save developers time by handling tedious setup and deployment tasks.
@@ -23,17 +32,6 @@ Before using webslinger, ensure you have the following installed and set up on y
 - **Node.js:** Make sure Node.js is installed. You can download it from [nodejs.org](https://nodejs.org).
 - **GitHub CLI:** Install GitHub CLI to automate GitHub repository creation and interaction. Instructions can be found [here](https://cli.github.com).
 - **Netlify CLI:** Install Netlify CLI to deploy your project to Netlify directly from the command line. You can install it with `npm install -g netlify-cli`.
-
-
-## Installation Steps:
-
-- **Demonstration:** (Show command line)
-"Let's get started! First, install webslinger globally using npm:
-
-```
-npm install -g webslinger
-```
-
 
 ## Usage
 
