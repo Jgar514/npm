@@ -40,18 +40,19 @@ program
     execSync('npx tailwindcss init -p', { stdio: 'inherit' });
 
     // Update Tailwind config
-    const tailwindConfig = `/** @type {import('tailwindcss').Config} */
-    export default {
-      content: [
-        "./index.html",
-        "./src/**/*.{js,ts,jsx,tsx}",
-      ],
-      theme: {
-        extend: {},
-      },
-      plugins: [],
-    }`;
-    fs.writeFileSync('tailwind.config.js', tailwindConfig, 'utf8');
+    const tailwindConfig = `
+      module.exports = {
+        content: [
+          "./index.html",
+          "./src/**/*.{js,jsx,ts,tsx}",
+        ],
+        theme: {
+          extend: {},
+        },
+        plugins: [],
+      };
+    `;
+    fs.writeFileSync('tailwind.config.js', tailwindConfig.trim(), 'utf8');
 
     // Add Tailwind directives to index.css
     const tailwindDirectives = `@tailwind base;
@@ -101,6 +102,14 @@ program
     execSync('git commit -m "netlify"', { stdio: 'inherit' });
     execSync('git push origin main', { stdio: 'inherit' });
     execSync('netlify deploy --prod', { stdio: 'inherit' });
+
+    // Open project in VSCode
+    execSync('code .', { stdio: 'inherit' });
+
+    // Open GitHub repository in browser
+    execSync(`gh repo view --web`, { stdio: 'inherit' });
+
+    // Open website in browser
     execSync('netlify open:site', { stdio: 'inherit' });
   });
 
