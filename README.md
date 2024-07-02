@@ -3,9 +3,6 @@
 
 ## Installation Steps:
 
-- **Demonstration:** (Show command line)
-"Let's get started! First, install webslinger globally using npm:
-
 ```
 npm install -g webslinger
 ```
